@@ -2,7 +2,7 @@
 
 Este projeto foi desenvolvido para a vaga de estágiario de devops da empresa RevGás.
 
-- O sistema possuí a área administrativa, onde é possível realizar as operações de CRUD no model BANCO. Ademais, é possível realizar o import do xls que foi fornecido no e-mail através desta url: http://localhost:8000/admin/core/bank/import/ , basta informa o xls e prosseguir com a operação. Esta operação pode ser realizada também através da API, o qual foi disponibilizado um endpoint apenas para esta tarefa.
+- O sistema possuí a área administrativa, onde é possível realizar as operações de CRUD no model BANCO. Ademais, é possível realizar o import do xls que foi fornecido no e-mail através desta url: http://localhost:8000/admin/core/bank/import/ , basta informar o xls e prosseguir com a operação. Esta operação pode ser realizada também através da API, o qual foi disponibilizado um endpoint apenas para esta tarefa.
 
 - Além da área administrativa, possui também a área do usuário normal, onde é possível ver os bancos cadastrados.
 - Ambas as áreas necessitam de login.
