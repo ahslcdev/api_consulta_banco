@@ -1,0 +1,38 @@
+{% extends 'layout/base.html' %}
+
+
+{% block main %}
+<div class="content-posts">
+    <h3>Instituições bancárias cadastradas</h3>
+    <hr>
+    <table id="bankTable" class="display w-100">
+        <thead>
+            <tr>
+                <th>Código de Compensação</th>
+                <th>Nome da Instituição</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+    
+{% include 'includes/scripts.html' %}
+<script>
+    $(document).ready(function() {
+        $('#bankTable').DataTable({
+            "language": {
+                "url": '//cdn.datatables.net/plug-ins/2.0.3/i18n/pt-BR.json',
+            },
+            "ajax": {
+                "url": "/api/banks/", 
+                "type": "GET", 
+                "dataSrc": "" 
+            },
+
+            "columns": [
+                {"data": "code"},
+                {"data": "name"}
+            ]
+        });
+    });
+</script>
+{% endblock main %}
